@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    
+}
+#game{
+    width: 400px;
+    height: 500px;
+    border: 1px solid black;
+    margin: auto;
+    overflow: hidden;
+    background: url('./city.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+#block{
+    width: 50px;
+    height: 500px;
+    background-color: rgb(30, 255, 0);
+    position: relative;
+    left: 400px;
+    animation: block 2s infinite linear;
+}
+@keyframes block{
+    0%{left:400px}
+    100%{left:-50px}
+}
+#hole{
+    width: 50px;
+    height: 150px;
+    background: url('./hole.png');
+    position: relative;
+    left: 400px;
+    top: -500px;
+    animation: block 2s infinite linear;
+}
+#character {
+    width: 35px;
+    height: 35px;
+    background-image: url('bird.png'); /* Путь к изображению птички */
+    background-size: cover; /* Масштабируем изображение так, чтобы оно занимало всю область */
+    position: absolute;
+    top: 100px;
+    border-radius: 50%; /* Можно оставить, если изображение птички круглое */
+}
+#body{
+    background-color: black;
+}
